@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    /* Giới hạn chiều rộng của container */
+    margin: auto;
+    /* Căn giữa container */
+}
+
+.column {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-width: 250px;
+    /* Cố định chiều rộng tối thiểu cho mỗi cột */
+    max-width: 300px;
+    /* Cố định chiều rộng tối đa cho mỗi cột */
+    height: 200px;
+    /* Cố định chiều cao cho mỗi cột */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Phân bố đều nội dung trong cột */
+}
+
+.column h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    /* Thêm khoảng cách dưới tiêu đề */
+}
+
+button {
+    padding: 10px;
+    /* Tăng kích thước của nút để dễ bấm hơn */
+    width: 100%;
+    /* Nút chiếm toàn bộ chiều rộng cột */
+}
+
+/* Thêm cuộn cho nội dung nếu vượt quá chiều cao cố định của cột */
+.column-content {
+    overflow-y: auto;
+    /* Cho phép cuộn dọc nếu cần */
+    margin-bottom: 10px;
+    /* Khoảng cách giữa nội dung và nút */
+}
